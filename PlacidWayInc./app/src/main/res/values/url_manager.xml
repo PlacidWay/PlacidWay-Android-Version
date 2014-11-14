@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Base url-->
+    <string name="UrlBase">http://www.placidway.com/mobile_apps/</string>
+    <string name="UrlBase2">www.placidway.com/mobile_apps/</string>
+    <!--Server user and password-->
+    <string name="httpUser">placidway</string>
+    <string name="httpPassword">placidway</string>
+    <!--Service to get all treatment list-->
+    <string name="UrlGetAllTreatment">GetAllTreatments.php</string>
+    <!--Service to get all countries list-->
+    <string name="UrlGetAllCountries">GetAllCountries.php</string>
+    <!--Serivice to get cities of the country choosen-->
+    <string name="UrlGetAllCitiesByCountry">GetAllCitiesByCountry.php?countryName=</string>
+    <!--get list of medical Center-->
+    <string name="UrlGetSearchedMedicalList">SearchMedicalCenters.php?countryName=</string>
+    <!--Contact Us-->
+    <string name="UrlContactUs">contact-us.php?submit=yes</string>
+</resources>

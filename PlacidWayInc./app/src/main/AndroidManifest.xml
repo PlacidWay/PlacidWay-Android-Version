@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.placidway.inc" >
+
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-sdk android:minSdkVersion="8" />
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar"
+        android:name=".appInfo.PlacidWay"
+        >
+        <activity
+            android:name="com.placidway.inc.activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.placidway.inc.activities.MedicalCenterActivity"
+            android:label="@string/title_activity_medical_center" >
+        </activity>
+        <activity
+            android:name="com.placidway.inc.activities.AboutUsActivity"
+            android:label="@string/title_activity_about_us" >
+        </activity>
+        <activity
+            android:name="com.placidway.inc.activities.SearchResultActivity"
+            android:label="@string/title_activity_search_result" >
+        </activity>
+        <activity
+            android:name="com.placidway.inc.activities.DetailListActivity"
+            android:label="@string/title_activity_detail_list" >
+        </activity>
+        <activity
+            android:name="com.placidway.inc.activities.FreeQouteActivity"
+            android:label="@string/title_activity_free_qoute" >
+        </activity>
+        <activity
+            android:name="com.placidway.inc.activities.PopUpWebView"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar" >
+        </activity>
+    </application>
+
+</manifest>

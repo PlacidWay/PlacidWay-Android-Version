@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <!-- Header aligned to top -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header_main"
+        android:gravity="center" >
+
+    </RelativeLayout>
+
+    <!-- Footer aligned to bottom -->
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/footer_bar"
+        android:gravity="center" >
+
+    </RelativeLayout>
+
+    <!-- Scrollable Item below header and above footer -->
+
+    <RelativeLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center|center_horizontal|center_vertical" >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_medical_center"
+            android:src="@drawable/btn_medical_center"
+            android:background="@null"
+            android:gravity="center_vertical|top"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="gotoMedicalCenter" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_free_qoutes"
+            android:layout_below="@+id/btn_medical_center"
+            android:layout_alignLeft="@+id/btn_medical_center"
+            android:layout_alignStart="@+id/btn_medical_center"
+            android:src="@drawable/btn_free_qoutes"
+            android:focusableInTouchMode="false"
+            android:cropToPadding="false"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|center"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="gotoFreeQoutes"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_about_us"
+            android:layout_below="@+id/btn_free_qoutes"
+            android:layout_alignLeft="@+id/btn_free_qoutes"
+            android:layout_alignStart="@+id/btn_free_qoutes"
+            android:src="@drawable/btn_about_us"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|bottom"
+
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="gotoAboutUs" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
