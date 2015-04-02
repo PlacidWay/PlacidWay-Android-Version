@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:id="@+id/relativeLayout">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:background="@drawable/header_about_us" >
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/btn_call"
+            android:background="@drawable/icon_phone"
+            android:layout_gravity="left"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/btn_mail"
+            android:background="@drawable/icon_mail"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/footer_bar"
+        android:gravity="center" >
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_home"
+            android:background="@drawable/home_icon"
+            android:layout_gravity="left"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"
+            android:onClick="goMainHome" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_back"
+            android:background="@drawable/back_icon"
+            android:layout_alignTop="@+id/btn_home"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp"
+            android:onClick="goBack" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/header"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/footer"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/header"
+            android:layout_above="@+id/footer"
+            >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to PlacidWay "
+                android:id="@+id/tv_email"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                style="@style/Welcome"
+                android:layout_marginBottom="10dp"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="PlacidWay, a leader in the medical tourism industry, offers extensive information related to medical travel, international medical providers, foreign treatment packages, as well as global destinations for health travelers.\n\nPlacidWay's network has over 250 renowned medical centers from more than 30 countries. We are able to help customers from all over the world get access to personalized, safe, and affordable medical care, no matter where they are from, meeting their budget requirements. Our goal is to help each customer make the right decision when it comes to choosing health care options abroad.\n\nExplore… Customize… \nExperience… Medical Tourism!"
+                android:id="@+id/tv_title"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/white"
+                android:layout_below="@+id/tv_email"
+                style="@style/AboutUs"
+                android:textSize="30sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="SharedPref_Filename">sharedpref_file</string>
+    <string name="app_name">PlacidMobile</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_medical_center">MedicalCenterActivity</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+    <string name="title_activity_search_result">SearchResultActivity</string>
+    <string name="title_activity_price_search_result">PriceSearchResultActivity</string>
+
+    <string name="title_activity_detail_list">DetailListActivity</string>
+    <string name="title_activity_free_qoute">FreeQouteActivity</string>
+    <string name="title_activity_pricing">PricingActivity</string>
+    <string name="about_us">New Text</string>
+    <string name="placid_call">+1-303-500-3821</string>
+    <string name="placid_mail">info@placidway.com</string>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="loading">Loading&#8230;</string>
+
+</resources>

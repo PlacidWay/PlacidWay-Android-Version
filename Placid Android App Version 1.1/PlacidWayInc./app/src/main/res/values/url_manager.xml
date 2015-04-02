@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Base url-->
+    <string name="UrlBase">http://www.placidway.com/mobile_apps/</string>
+    <string name="UrlBase2">www.placidway.com/mobile_apps/</string>
+    <!--Server user and password-->
+    <string name="httpUser">placidway</string>
+    <string name="httpPassword">placidway</string>
+    <!--Service to get all treatment list-->
+    <string name="UrlGetAllTreatment">GetAllTreatments.php</string>
+    <!--Service to get all countries list-->
+    <string name="UrlGetAllCountries">GetAllCountries.php</string>
+    <!--Serivice to get cities of the country choosen-->
+    <string name="UrlGetAllCitiesByCountry">GetAllCitiesByCountry.php?countryName=</string>
+    <!--get list of medical Center-->
+    <string name="UrlGetSearchedMedicalList">SearchMedicalCenters.php?countryName=</string>
+    <!--Contact Us-->
+    <string name="UrlContactUs">contact-us.php?submit=yes</string>
+    <!--Service to get pricing treatment list-->
+    <string name="UrlPricingTreatment">all_treatments.php</string>
+    <!--Procedure by treatment-->
+    <string name="UrlPricingProcedureByTreatment">get_procedure_by_treatment.php?treatment=</string>
+    <!--Country by procedure-->
+    <string name="UrlPricingCountryByProcedure">get_country_by_treatment.php?procedure=</string>
+    <!--Search List of Pricing-->
+    <string name="UrlGetPricingSearch">find_cost_searchlist.php?treatment_cost=</string>
+
+</resources>
